@@ -13,6 +13,8 @@ public class Main {
         Search s= new Search();
         s.SearchBar(driver);
         Thread.sleep(2000);
+        Category c = new Category();
+        c.SubCategory(driver);
         driver.navigate().back();
         Thread.sleep(2000);
         Login l = new Login();
