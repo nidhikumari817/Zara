@@ -7,7 +7,7 @@ public class Search {
         Thread.sleep(2000);
         driver.findElement(By.id("search-products-form-combo-input")).sendKeys("Trousers");
         Thread.sleep(2000);
-        //driver.findElement(By.id("search-products-form-combo-input")).sendKeys(Keys.ENTER);
+        driver.findElement(By.id("search-products-form-combo-input")).sendKeys(Keys.ENTER);
         Thread.sleep(2000);
     }
 }
