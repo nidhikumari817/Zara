@@ -11,10 +11,16 @@ public class Main {
         Thread.sleep(2000);
         Search s = new Search();
         s.SearchBar(driver);
-       Thread.sleep(2000);
-       driver.navigate().back();
-       Thread.sleep(2000);
-       Login l = new Login();
-       l.ZaraLogin(driver);
+        Thread.sleep(2000);
+        SearchResults r = new SearchResults();
+        r.Results(driver);
+        Thread.sleep(2000);
+        driver.navigate().back();
+        Thread.sleep(2000);
+        Login l = new Login();
+        l.ZaraLogin(driver);
+        Thread.sleep(2000);
+        driver.navigate().back();
+        Thread.sleep(2000);
     }
 }
