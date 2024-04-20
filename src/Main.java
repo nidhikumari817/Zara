@@ -17,6 +17,10 @@ public class Main {
         Thread.sleep(2000);
         driver.navigate().back();
         Thread.sleep(2000);
+        driver.navigate().back();
+        Thread.sleep(2000);
+        HomePageImage h = new HomePageImage();
+        h.imageCarousel(driver);
         Login l = new Login();
         l.ZaraLogin(driver);
         Thread.sleep(2000);

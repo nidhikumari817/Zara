@@ -8,8 +8,7 @@ public class SearchResults {
     public void Results (WebDriver driver) throws InterruptedException {
 
         // Finding the main container of product using xpath
-        String productListsXpath = "//ul[@class=\"product-grid__product-list\"]";
-        WebElement productListsElement = driver.findElement(By.xpath(productListsXpath));
+        WebElement productListsElement = driver.findElement(By.xpath("//ul[@class=\"product-grid__product-list\"]"));
 
         // Finding all child elements inside the container (list of trousers)
         List<WebElement> productItems = productListsElement.findElements(By.xpath("*"));
